@@ -31,3 +31,5 @@ Schéma de principe : `captures/` n'est pas l'endroit du schéma, il est dans ce
 | Switch manageable 8 ports | VLAN, trunk | À acheter |
 | PC fixe (16 Go) | Zone admin, VM | ✅ |
 | Vieux PC (8 Go) | Rôle à définir | À compléter |
+
+<img width="1326" height="570" alt="image" src="https://github.com/user-attachments/assets/1ee316fb-907b-44c3-880f-3c2702086ed5" />
