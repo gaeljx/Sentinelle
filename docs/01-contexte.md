@@ -7,14 +7,13 @@ Sécuriser une zone de mon réseau domestique et la transformer en lab permanent
 - PC fixe principal (Windows 11, 16 Go RAM) : zone admin
 - PC portable : zone postes
 - Téléphone : zone postes (Wi-Fi, plus tard)
-- Vieux PC (8 Go) : rôle à définir, pas encore inclus
+- Vieux PC (8 Go) : rôle à confirmer, probablement serveur de services
 - Routeur et switch Sentinelle : à acheter, à l'intérieur de la zone
 
 ## Hors périmètre
-- Appareils des autres personnes de la maison : je ne les gère pas, je ne les inspecte pas
+- Réseau familial (box, Wi-Fi familial) : séparé, sans VLAN
 - Box internet : configurée en mode bridge, elle ne fait que la liaison
-- Accès à distance (VPN externe) : pas pour l'instant
-
+ 
 ## Contraintes
 - Lab accessible uniquement depuis la maison
 - Données privées, stockées en local
