@@ -1,6 +1,3 @@
-### 2026-11-07
-- Tableau d'analogie maison complet (14 composantes).
-
 # Conception : l'idée avec l'analogie de la maison
 
 ## Tableau d'analogie (maison → réseau)
@@ -20,6 +17,11 @@
 | **Vestibule** | DMZ : zone tampon où arrivent les services exposés, isolée du reste | ✅ |
 | **Fausse chambre forte** | Honeypot : leurre attirant, observe les intrusions sans rien protéger | ✅ |
 | **Chambre forte** | Zone des données et services critiques (Vaultwarden, sauvegardes), accès très restreint | ✅ |
-| **Salon** | Zone invités gérée : accès accordé par toi au cas par cas, surveillé | ✅ |
+| **Salon** | Zone invités gérée : accès accordé par toi au cas par cas, surveillé | 🔁 |
 
 **Reste ouvert** : les services accessibles aux invités (à définir quand tu auras listé tes services, VPN compris).
+
+## Journal
+
+### 2026-11-07
+- Tableau d'analogie maison complet (14 composantes), salon en 🔁, services invités à définir.
