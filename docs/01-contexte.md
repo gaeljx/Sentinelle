@@ -33,3 +33,24 @@ Sécuriser une zone de mon réseau domestique et la transformer en lab permanent
 8. Détection : une intrusion test génère une alerte
 
 Les critères de validation de chaque objectif sont dans `06-tests.md`.
+
+## Services retenus
+
+| Service | Rôle | Zone | Statut |
+|---|---|---|---|
+| VPN (WireGuard) | Accès à distance, seule entrée depuis l'extérieur | Vestibule (DMZ) | ✅ |
+| SSO / 2FA | Identité centralisée pour les autres services | Chambre forte | ✅ |
+| Gestionnaire de mots de passe (Vaultwarden) | Mots de passe, en local | Chambre forte | ✅ |
+| Sauvegardes chiffrées (Restic) | Copie des données critiques, testée | Chambre forte | ✅ |
+| Partage de fichiers (Samba) | Dossiers partagés, droits par utilisateur | Zone postes ou admin | ✅ |
+| Streaming (Jellyfin) | Médias en local | Zone postes ou admin | ✅ |
+| DNS (Pi-hole) | Filtrage des domaines malveillants | Zone admin ou serveur | 🔁 |
+| DHCP | Adresses IP par zone | Routeur Sentinelle | ✅ |
+| Pare-feu / routage | Filtrage entrant et sortant | Routeur Sentinelle | ✅ |
+| Logs centralisés (Syslog) | Journaux, la « caméra » | Chambre forte | ✅ |
+| Détection (Suricata) | Alertes sur le trafic | Routeur ou switch (mirroring) | ✅ |
+| Supervision (Grafana, Prometheus) | État des machines, alertes | Chambre forte ou admin | ✅ |
+| Honeypot (Cowrie) | Leurre pour observer les attaques | Fausse chambre forte (vestibule) | ✅ |
+| Machine d'attaque (Kali) | Tests de défense | Zone admin | ✅ |
+
+**Règle par défaut** : les invités (salon, VLAN 30) n'ont qu'Internet. Tout autre service s'ouvre au cas par cas.
