@@ -1,9 +1,9 @@
 # Décisions
 
 ## 1. Mode de la box
-**Choix** : bridge (pont). La box ne fait que la liaison Internet.
-**Pourquoi** : le routeur Sentinelle doit être la seule passerelle, pour contrôler tout le trafic.
-**Avant** : routeur normal (rejeté : deux niveaux de NAT, la box garde un regard sur le réseau).
+**Choix** : box en mode routeur pour l'instant (état réel). Passage en bridge envisagé plus tard.
+**Pourquoi** : la box actuelle route et fait le Wi-Fi familial. Je ne veux pas la reconfigurer avant d'avoir validé Sentinelle en maquette.
+**Conséquence** : deux niveaux de NAT (box, puis routeur Sentinelle). À documenter dans les limites.
 **Date** : 2026-11-07
 
 ## 2. Routeur et switch dans la zone Sentinelle
