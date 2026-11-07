@@ -12,11 +12,12 @@ Maquette Packet Tracer : elle montre la structure (frontière, zones, flux). Ell
 
 | Flux | De | Vers | Passe par |
 |---|---|---|---|
-| Internet entrant | Internet | Vestibule (VPN) | Box → routeur Sentinelle |
-| Internet sortant | Zones | Internet | Routeur Sentinelle |
-| Accès admin | Zone admin (10) | Chambre forte | Routeur Sentinelle |
+| Internet entrant (VPN) | Internet | Vestibule (VPN, port redirigé par la box) | Box (redirection) → routeur Sentinelle |   
+|Internet sortant | Zones | Internet | Routeur Sentinelle |
+| Administration | Zone admin (10) | Routeur, serveur de services | Routeur Sentinelle |
 | Invités | Salon (30) | Internet | Routeur Sentinelle |
 | Maison | Réseau familial | Internet | Box (hors Sentinelle) |
+> Seul flux entrant autorisé : le port VPN, redirigé par la box vers le vestibule. Tout autre port reste fermé. Détail des règles dans `05-regles.md`.
 
 ## Zones
 
@@ -24,7 +25,7 @@ Maquette Packet Tracer : elle montre la structure (frontière, zones, flux). Ell
 |---|---|---|---|
 | Admin | 10 | Administration | PC fixe, Kali |
 | Postes | 20 | Usage quotidien | PC portable, téléphone |
-| Salon (invités gérés) | 30 | Invités, accès au cas par cas | Appareils invités |
+| Salon (invités gérés) | 30 | Invités, accès accordé par toi, surveillé | Appareils invités |
 | Vestibule (DMZ) | À compléter | Services exposés | VPN, honeypot |
 | Chambre forte | À compléter | Données et services critiques | SSO, Vaultwarden, Restic, Syslog, Grafana |
 | Maison (hors Sentinelle) | aucun | Réseau familial, non géré | Appareils de la famille |
