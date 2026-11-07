@@ -15,7 +15,7 @@ Internet → Box (mode bridge) → Routeur Sentinelle (pare-feu, frontière) →
 | Admin | 10 | PC fixe principal |
 | Postes | 20 | PC portable, téléphone |
 | Salon (invités gérés) | 30 | Invités, accès accordé au cas par cas |
-| Hors Sentinelle | 40 | Appareils de la famille, non gérés |
+| Hors Sentinelle | aucun | Appareils de la famille, non gérés |
 
 Schéma détaillé et analogie maison : [docs/02-architecture.md](docs/02-architecture.md) et [docs/00-conception.md](docs/00-conception.md)
 
