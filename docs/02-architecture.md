@@ -46,4 +46,4 @@ Maquette Packet Tracer : elle montre la structure (frontière, zones, flux). Ell
 
 Schéma Packet Tracer des zones VLAN. Le switch (2960) porte les VLAN 10, 20, 30, 40, 50 et 99. Le routeur 2911 est relié en fa0/1 (trunk). Le VLAN 99 et le VLAN 50 n'ont pas de machine pour l'instant. La configuration reste à faire.
 
-> Le HomeRouter représente la box réelle (routeur Wi-Fi). Le routeur 2911 représente le routeur Sentinelle, frontière de la zone.
+> Le schéma ne représente que la partie "Sentinelle". Le routeur 2911 représente le routeur Sentinelle, frontière de la zone.
