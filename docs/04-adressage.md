@@ -7,8 +7,8 @@
 | Admin | 10 | À compléter | À compléter | DHCP + réservations |
 | Postes | 20 | À compléter | À compléter | DHCP |
 | Salon (invités gérés) | 30 | À compléter | À compléter | DHCP |
-| Vestibule (DMZ) | À compléter | À compléter | À compléter | Fixe |
-| Chambre forte | À compléter | À compléter | À compléter | Fixe |
+| Vestibule (DMZ) | 50 | À compléter | À compléter | Fixe |
+| Chambre forte | 40 | À compléter | À compléter | Fixe |
 
 ## Adresses fixes par service
 | Service | Zone | Adresse | Port |
