@@ -42,7 +42,7 @@ Maquette Packet Tracer : elle montre la structure (frontière, zones, flux). Ell
 
 ## Schéma
 
-![Schéma Packet Tracer avec VLAN (zones 10, 20, 30, 40, 50, 99)](../images/schema-vlans.png)
+![Schéma Packet Tracer avec VLAN (zones 10, 20, 30, 40, 50, 99)](../images/schema_vlans.png)
 
 Schéma Packet Tracer des zones VLAN. Le switch (2960) porte les VLAN 10, 20, 30, 40, 50 et 99. Le routeur 2911 est relié en fa0/1 (trunk). Le VLAN 99 et le VLAN 50 n'ont pas de machine pour l'instant. La configuration reste à faire.
 
